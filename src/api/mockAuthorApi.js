@@ -72,7 +72,7 @@ class AuthorApi {
           author.id == authorId;
         });
         authors.splice(indexOfAuthorToDelete, 1);
-        resolve();
+        resolve(authorId);
       }, delay);
     });
   }
